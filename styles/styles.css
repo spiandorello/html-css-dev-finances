@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #2D4A22;
+  padding: 30px 0;
+}
+.header .header__container {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header__container nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.2s;
+  position: relative;
+}
+.header .header__container nav a + a {
+  margin-left: 32px;
+}
+.header .header__container nav a:hover {
+  opacity: 0.8;
+}
+.header .header__container nav a:hover:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  border-bottom: 2px solid #49AA26;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  margin-top: -150px;
+}
+
+.card {
+  background: #FFFFFF;
+  padding: 22px 32px;
+  border-radius: 5px;
+}
+.card.card-secondary {
+  background: #49AA26;
+  color: #FFFFFF;
+}
+.card .card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .card__header p {
+  font-size: 16px;
+}
+.card h1 {
+  margin-top: 14px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 54px;
+}
+
+.table-container {
+  margin-top: 64px;
+}
+.table-container table {
+  width: 100%;
+  border-spacing: 0 8px;
+}
+.table-container table th {
+  color: #969cb3;
+  font-weight: normal;
+  padding: 20px 32px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+}
+.table-container table td {
+  padding: 20px 32px;
+  border: 0;
+  background: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  color: #969cb3;
+}
+.table-container table td.title {
+  color: #363f5f;
+}
+.table-container table td.income {
+  color: #12a454;
+}
+.table-container table td.outcome {
+  color: #e83f5b;
+}
+.table-container table td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.table-container table td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
